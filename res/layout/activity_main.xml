@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calculator.MainActivity" >
+
+	<TextView 
+	    android:id="@+id/titleBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="计算器"
+	    android:textSize="25sp"
+	    android:gravity="center_horizontal"
+	    />
+	
+	<EditText 
+	    android:id="@+id/Num"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/titleBar"
+	    android:textSize="20sp"
+	    android:gravity="right"
+	    />
+	
+	<Button 
+	    android:id="@+id/_5"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="5"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+	
+	<Button 
+	    android:id="@+id/_2"
+	    android:layout_above="@id/_5"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="2"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+	
+	<Button 
+	    android:id="@+id/_4"
+	    android:layout_toLeftOf="@id/_5"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="4"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+	
+	<Button 
+	    android:id="@+id/_6"
+	    android:layout_toRightOf="@id/_5"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="6"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+	
+	<Button 
+	    android:id="@+id/_8"
+	    android:layout_below="@id/_5"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="8"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+	
+	<Button 
+	    android:id="@+id/_1"
+	    android:layout_above="@id/_4"
+	    android:layout_toLeftOf="@id/_2"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="1"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+				
+	<Button 
+	    android:id="@+id/_3"
+	    android:layout_above="@id/_6"
+	    android:layout_toRightOf="@id/_2"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="3"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+								
+	<Button 
+	    android:id="@+id/_7"
+	    android:layout_below="@id/_4"
+	    android:layout_toLeftOf="@id/_8"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="7"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+													
+	<Button 
+	    android:id="@+id/_9"
+	    android:layout_below="@id/_6"
+	    android:layout_toRightOf="@id/_8"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="9"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+	
+	<Button 
+	    android:id="@+id/_0"
+	    android:layout_below="@id/_9"
+	    android:layout_toRightOf="@id/_8"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="0"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
+	    />
+	
+	<!-- 运算符 -->
+	<Button 
+	    android:id="@+id/plus"
+	    android:layout_below="@id/_8"
+	    android:layout_toLeftOf="@id/_8"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="＋"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    />
+		
+	<Button 
+	    android:id="@+id/minus"
+	    android:layout_below="@id/_7"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="-"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    />
+			
+	<Button 
+	    android:id="@+id/times"
+	    android:layout_below="@id/plus"
+	    android:layout_toLeftOf="@id/_8"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="×"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    />
+				
+	<Button 
+	    android:id="@+id/divide"
+	    android:layout_below="@id/minus"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="÷"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    />
+	
+	<!-- 归零 -->		
+	<Button 
+	    android:id="@+id/toZero"
+	    android:layout_below="@id/_0"
+	    android:layout_toRightOf="@id/_8"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="C"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    />
+	
+	<!--  等于 -->		
+	<Button 
+	    android:id="@+id/isEqual"
+	    android:layout_below="@id/divide"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="="
+	    android:layout_alignLeft="@id/times"
+	    android:layout_alignRight="@id/toZero"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    />
+						
+</RelativeLayout>
