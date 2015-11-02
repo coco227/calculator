@@ -41,10 +41,18 @@ public class MainActivity extends ActionBarActivity {
 	}
 	
 	public void inputNum(View view) {
-//		System.out.println("aaaaaaa");
 		
 		EditText num = (EditText)findViewById(R.id.Num);
-		num.setText("123");
-		Log.d("CLICKCRASH", findViewById(R.id.Num).toString());
+		
+		Log.d(null, view.findViewById(R.id.Num).toString());
+		
+		switch () {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
 	}
 }
