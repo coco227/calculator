@@ -146,6 +146,7 @@
 	    android:text="＋"
 	    android:layout_width="50dp"
 	    android:layout_height="wrap_content"
+	    android:onClick="cal"
 	    />
 		
 	<Button 
@@ -156,6 +157,7 @@
 	    android:text="-"
 	    android:layout_width="50dp"
 	    android:layout_height="wrap_content"
+	    android:onClick="cal"
 	    />
 			
 	<Button 
@@ -167,6 +169,7 @@
 	    android:text="×"
 	    android:layout_width="50dp"
 	    android:layout_height="wrap_content"
+	    android:onClick="cal"
 	    />
 				
 	<Button 
@@ -177,6 +180,7 @@
 	    android:text="÷"
 	    android:layout_width="50dp"
 	    android:layout_height="wrap_content"
+	    android:onClick="cal"
 	    />
 	
 	<!-- 归零 -->		
@@ -189,6 +193,7 @@
 	    android:text="C"
 	    android:layout_width="50dp"
 	    android:layout_height="wrap_content"
+	    android:onClick="inputNum"
 	    />
 	
 	<!--  等于 -->		
@@ -202,6 +207,7 @@
 	    android:layout_alignRight="@id/toZero"
 	    android:layout_width="50dp"
 	    android:layout_height="wrap_content"
+	    android:onClick="cal"
 	    />
 						
 </RelativeLayout>
